@@ -11,6 +11,8 @@ console.log(Keypair.generate())
 // console.log(new SolanaPublicKey('7iajpXZydiLrKgN1QTAm8ohNuGfEUGbPG3DuaDmGjZ8T'))
 export const DEFAULT_NEAR_PUBLIC_KEY = NearPublicKey.fromString('11111111111111111111111111111111')
 // console.log(crypto.randomBytes(16))
+console.log(DEFAULT_NEAR_PUBLIC_KEY)
+
 function App() {
   const [count, setCount] = useState(0)
   return (

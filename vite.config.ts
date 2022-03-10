@@ -13,19 +13,17 @@ import { builtinModules } from 'module'
 export const r = (...args: string[]) => resolve(__dirname, '.', ...args)
 export default defineConfig({
   plugins: [
-    inject({ Buffer: ['buffer', 'Buffer'] }),
+    // inject({ Buffer: ['buffer', 'Buffer'] }),
     // NodeModulesPolyfills(),
     // NodeGlobalsPolyfillPlugin({ buffer: true, define: { global: 'globalThis' } }),
     react(),
     // commonjsExternals({
     //   externals: builtinModules,
     // }),
-    chromeExtension({ manifest }),
+    // chromeExtension({ manifest }),
   ],
   // optimizeDeps: { include: ['@solana/web3.js', 'buffer'] },
-  build: {
-    commonjsOptions: { include: [] },
-  },
+
   // resolve: { dedupe: ['@solana/web3.js', 'borsh'] },
 
   define: { global: 'globalThis' },
