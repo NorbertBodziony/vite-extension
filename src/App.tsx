@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
-// import { Keypair } from '@solana/web3.js'
+import { Keypair } from '@solana/web3.js'
 // import { PublicKey as SolanaPublicKey, Transaction as SolanaTx } from '@solana/web3.js'
 import { PublicKey as NearPublicKey } from 'near-api-js/lib/utils'
-// console.log(Keypair.generate())
+console.log(Keypair.generate())
 // import { serialize, baseDecode, deserialize } from 'borsh'
 
 // import crypto from 'crypto-browserify'
