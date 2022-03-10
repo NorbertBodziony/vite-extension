@@ -1,5 +1,7 @@
-// import crypto from 'crypto'
-// global.Buffer = Buffer
+// import { Buffer } from 'buffer';
+// import crypto from 'crypto';
+// global.Buffer = Buffer;
+// globalThis.Buffer = Buffer
 // globalThis.crypto = crypto
 import React from 'react'
 import ReactDOM from 'react-dom'

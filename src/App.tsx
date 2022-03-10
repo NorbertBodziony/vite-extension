@@ -2,24 +2,23 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 import { Keypair } from '@solana/web3.js'
-// import { PublicKey as SolanaPublicKey, Transaction as SolanaTx } from '@solana/web3.js'
+import { PublicKey as SolanaPublicKey, Transaction as SolanaTx } from '@solana/web3.js'
 import { PublicKey as NearPublicKey } from 'near-api-js/lib/utils'
 console.log(Keypair.generate())
 // import { serialize, baseDecode, deserialize } from 'borsh'
 
 // import crypto from 'crypto-browserify'
-// console.log(new SolanaPublicKey('7iajpXZydiLrKgN1QTAm8ohNuGfEUGbPG3DuaDmGjZ8T'))
+console.log(new SolanaPublicKey('7iajpXZydiLrKgN1QTAm8ohNuGfEUGbPG3DuaDmGjZ8T'))
 export const DEFAULT_NEAR_PUBLIC_KEY = NearPublicKey.fromString('11111111111111111111111111111111')
-// console.log(crypto.randomBytes(16))
 console.log(DEFAULT_NEAR_PUBLIC_KEY)
-
+// console.log(crypto.randomBytes(16))
 function App() {
   const [count, setCount] = useState(0)
   return (
     <div className='App' style={{ width: 500 }}>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <p>Hello Vite + ss!</p>dsad
+        <p>Hello Vite + ss!</p>dsadss
         <p>
           <button type='button' onClick={() => setCount((count) => count + 1)}>
             count is: {count}

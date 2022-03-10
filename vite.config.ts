@@ -20,11 +20,11 @@ export default defineConfig({
     // commonjsExternals({
     //   externals: builtinModules,
     // }),
-    // chromeExtension({ manifest }),
+    chromeExtension({ manifest }),
   ],
   // optimizeDeps: { include: ['@solana/web3.js', 'buffer'] },
 
   // resolve: { dedupe: ['@solana/web3.js', 'borsh'] },
 
-  define: { global: 'globalThis' },
+  // define: { global: 'globalThis' },
 })
