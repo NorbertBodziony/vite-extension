@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "version": "0.1",
+  "name": "test vite",
+
+  "background": { "service_worker": "src/scripts/background.ts" },
+  "action": {
+    "default_popup": "src/pages/app/popup.html",
+    "default_icon": "logo.png"
+  },
+  "icons": {
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["src/scripts/contentScript.ts"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "storage",
+    "activeTab",
+    "webRequest",
+    "notifications",
+    "webRequest",
+    "clipboardWrite",
+    "tabs"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["src/scripts/inject.ts"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
